@@ -48,22 +48,22 @@
         </javaTypeResolver>
         <!-- 生成Model类存放位置 -->
         <javaModelGenerator targetPackage="com.fc.test.model.auto" targetProject="src/main/java">
-            <property name="enableSubPackages" value="true"/>
+            <property name="enableSubPackages" value="true"/><!--D:\mybatis\generator\src-->
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
         <!-- 生成映射文件存放位置 -->
         <sqlMapGenerator targetPackage="mybatis.auto" targetProject="src/main/resources">
-            <property name="enableSubPackages" value="true"/>
+            <property name="enableSubPackages" value="true"/><!--D:\mybatis\generator\src-->
         </sqlMapGenerator>
         <!-- 生成Dao类存放位置 -->
         <!-- 客户端代码，生成易于使用的针对Model对象和XML配置文件的代码
             type="ANNOTATEDMAPPER",生成Java Model 和基于注解的Mapper对象
             type="XMLMAPPER",生成SQLMap XML文件和独立的Mapper接口 -->
         <javaClientGenerator type="XMLMAPPER" targetPackage="com.fc.test.mapper.auto" targetProject="src/main/java">
-            <property name="enableSubPackages" value="true"/>
+            <property name="enableSubPackages" value="true"/><!--D:\mybatis\generator\src-->
         </javaClientGenerator>
-        
-        <!-- 配置需要生成的表 
+
+        <!-- 配置需要生成的表
         <table tableName="t_sys_user" domainObjectName="TsysUser" enableCountByExample="true">
             <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
         </table>
@@ -79,7 +79,7 @@
         <table tableName="t_sys_permission_role" domainObjectName="TsysPermissionRole" enableCountByExample="true">
             <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
         </table>-->
-        
-        
+
+
     </context>
 </generatorConfiguration>
