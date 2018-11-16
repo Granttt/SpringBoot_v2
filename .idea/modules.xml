@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/SpringBoot_v2.iml" filepath="$PROJECT_DIR$/.idea/SpringBoot_v2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/initial_version_of_springboot/springboot_v2.iml" filepath="$PROJECT_DIR$/initial_version_of_springboot/springboot_v2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/initial_version_of_springboot/springboot_swagger2.iml" filepath="$PROJECT_DIR$/initial_version_of_springboot/springboot_swagger2.iml" />
     </modules>
   </component>
 </project>
