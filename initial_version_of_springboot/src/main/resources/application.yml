@@ -44,3 +44,20 @@ pagehelper:
     reasonable: true
     supportMethodsArguments: true
     params: count=countSql
+
+#发送邮件测试
+storage:
+  location: D:/profile/
+
+stmp:
+  host: smtp.163.com
+  account: gaoxiyang1237@163.com
+  password: guyfawkes1237
+
+mail:
+  smtp:
+    auth: true
+    timeout: 25000
+  attach:
+    img: D:/profile/pin.png
+    html: D:/profile/email.html
