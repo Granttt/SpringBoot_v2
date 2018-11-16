@@ -26,6 +26,13 @@ Springboot
 │  ├─admin 模版后台请求包
 │  └─HomeController.java 首页访问类
 │
+│
+│——fileTest 文件上传下载
+│
+│
+│——mailTest 发送邮件测试
+│
+│
 ├─Mapper Dao模块
 │  ├─auto mybatis-generator.xml自动生成Dao
 │  └─custom 自定义Dao
