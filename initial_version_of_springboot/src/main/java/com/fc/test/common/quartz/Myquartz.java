@@ -1,10 +1,11 @@
 package com.fc.test.common.quartz;
 
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 /**
  * 自定义定时器
@@ -17,14 +18,18 @@ import org.springframework.scheduling.annotation.Scheduled;
 @Configuration         //证明这个类是一个配置文件  
 @EnableScheduling       //打开quartz定时器总开关  
 public class Myquartz {
-	//@Autowired
-	//private TestService testService;
-	
-    @Scheduled(cron = "* * * * 2 *")
+
+    /**
+     * 功能描述：设置一个每10秒执行一次的任务
+     * @author gxy
+     * @date 2018/11/30 11:35
+     * @param
+     * @return
+     */
+    @Scheduled(cron = "0/10 * * * * ?")
     public void timer(){
     	
-    	//test=testService.queryId(test);
-    	//Gson gson=new Gson();
+
         //获取当前时间
         LocalDateTime localDateTime =LocalDateTime.now();
         System.out.println("当前时间为:" + localDateTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
